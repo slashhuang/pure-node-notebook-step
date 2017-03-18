@@ -1,5 +1,8 @@
-# npm_npmscript_webpack_node应用
+第一课
 
+------------------------npm知识overview------------------------------------
+
+# npm_npmscript应用
 
 ###  如何全局安装一个 node 应用?
 
@@ -40,6 +43,19 @@ npm install -g <packagename>
 > npm install --production will only install "dependencies"
 > npm install --dev will only install "devDependencies"
 
+## npm3与 npm2相比有什么改进？yarn和 npm 相比有什么优势? (选做## 题目)
+
+> npm3和npm2在安装模块的时候，策略上前者优于后者。
+
+> npm2是纯粹的不共享包原则。
+
+> npm3的优化点在于对于以字母序安装npm包的时候，优先安装在node_modules第一层级目录。
+
+> 这样做的好处是如果后续包有相关依赖则不需要重复安装。
+
+
+------------------------node_modules知识overview------------------------------------
+
 ## nodule_modules的查找路径是怎样的?
 
 > 如果require('模块id'),这个模块id不是nodejs的核心模块(比如http/path等)
@@ -52,15 +68,9 @@ npm install -g <packagename>
 
 [nodejs官方说明](https://nodejs.org/api/modules.html#modules_loading_from_node_modules_folders)
 
-## npm3与 npm2相比有什么改进？yarn和 npm 相比有什么优势? (选做## 题目)
 
-> npm3和npm2在安装模块的时候，策略上前者优于后者。
 
-> npm2是纯粹的不共享包原则。
-
-> npm3的优化点在于对于以字母序安装npm包的时候，优先安装在node_modules第一层级目录。
-
-> 这样做的好处是如果后续包有相关依赖则不需要重复安装。
+------------------------commonJS知识overview------------------------------------
 
 CommonJS规范:
 
@@ -77,7 +87,13 @@ exports.add = function(){
 3、模块标示
 > 小驼峰命名字符串、. 或者..路径
 
-[npm包发布官方说明](https://docs.npmjs.com/getting-started/publishing-npm-packages)
+
+------------------------http模块overview------------------------------------
+
+
+
+https://github.com/nodejs/node/blob/master/doc/api/http.md#httpcreateserverrequestlistener
+
 
 
 
