@@ -14,7 +14,9 @@ class App {
 		return (request,response)=>{
 			//每个请求逻辑
 			fs.readFile('./public/index.html','utf8',(error,data)=>{
-				response.end(JSON.stringify(_package))
+				response.end(JSON.stringify(_package),()=>{
+					console.log('data send')
+				})
 			})
 		}
 	}

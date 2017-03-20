@@ -40,21 +40,18 @@
 > 理解操作原理
 
 
+- [http模块](https://github.com/nodejs/node/blob/master/doc/api/fs.md)
+
+> writeHead 和 setHead的区别
+> content-type
+
+
 - [fs模块](https://github.com/nodejs/node/blob/master/doc/api/fs.md)
 
 > 文件读取
 
 > [file descriptor](http://www.sitepoint.com/accessing-the-file-system-in-node-js/)
 
-- [Promise知识](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
-
-> new Promise((res,rej)=>{})
-
-> Promise.resolve()
-
-> Promise.all
-
-> Promise.race
 
 
 
