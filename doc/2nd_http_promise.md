@@ -44,7 +44,7 @@
 
 > 文件读取
 
-> file descriptor
+> [file descriptor](http://www.sitepoint.com/accessing-the-file-system-in-node-js/)
 
 - [Promise知识](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
