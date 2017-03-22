@@ -35,6 +35,8 @@
 
 - [path模块](https://github.com/nodejs/node/blob/master/doc/api/path.md)
 
+[path图解](./2nd-assets/path.png)
+
 > posix 概念
 
 > 理解操作原理
