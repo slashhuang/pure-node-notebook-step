@@ -35,22 +35,32 @@
 
 - [path模块](https://github.com/nodejs/node/blob/master/doc/api/path.md)
 
-[path图解](./2nd-assets/path.png)
+- [path图解](./2nd-assets/path.png)
 
-> posix 概念
+> posix 概念:
 
-> 理解操作原理
+POSIX表示可移植操作系统接口（Portable Operating System Interface of UNIX，缩写为 POSIX ），POSIX标准定义了操作系统应该为应用程序提供的接口标准，是IEEE为要在各种UNIX操作系统上运行的软件而定义的一系列API标准的总称。
+为一个POSIX兼容的操作系统编写的程序，应该可以在任何其它的POSIX操作系统（即使是来自另一个厂商）上编译执行
+
+> 理解基本的操作系统概念
+
+(Operating System，简称OS）是管理和控制计算机硬件与软件资源的计算机程序，是直接运行在“裸机”上的最基本的系统软件，任何其他软件都必须在操作系统的支持下才能运行
 
 
 - [http模块](https://github.com/nodejs/node/blob/master/doc/api/fs.md)
 
+
+- header信息的头都会lowerCase
 > writeHead 和 setHead的区别
 > content-type
 
 
 - [fs模块](https://github.com/nodejs/node/blob/master/doc/api/fs.md)
 
+> File I/O is provided by simple wrappers around standard POSIX functions
 > 文件读取
+
+[posix文档](https://linux.die.net/man/)
 
 > [file descriptor](http://www.sitepoint.com/accessing-the-file-system-in-node-js/)
 
