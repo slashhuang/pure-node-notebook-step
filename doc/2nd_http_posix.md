@@ -10,7 +10,7 @@
 
 > extensible 通过headers语义沟通客户端和服务端
 
-> stateless but not sessionless
+> stateless but not sessionless 
 
 > http连接
 	- http 1.0 open tcp for each request/response
@@ -22,9 +22,12 @@
 	- Send an HTTP message
 	- Read the response sent by the server
 
+---------
+
+
 > HTTP Messages
-	- request
-		> method 、path 、protocal 、headers 、body、
+	- request  
+		> [ method 、path 、protocal 、headers ]、body、
 	- response
 		> version 、statusCode 、statusMessage 、headers 、body、
 
@@ -32,6 +35,8 @@
 
 	> [status](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 
+
+-----------   Node --------
 
 - [path模块](https://github.com/nodejs/node/blob/master/doc/api/path.md)
 
