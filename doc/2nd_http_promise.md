@@ -64,6 +64,10 @@ POSIX表示可移植操作系统接口（Portable Operating System Interface of 
 
 > [file descriptor](http://www.sitepoint.com/accessing-the-file-system-in-node-js/)
 
+> [wiki fd](https://en.wikipedia.org/wiki/File_descriptor)
+
+In Unix and related computer operating systems, a file descriptor (FD, less frequently fildes) is an abstract indicator (handle) used to access a file or other input/output resource, such as a pipe or network socket. File descriptors form part of the POSIX application programming interface.
+
 
 
 
