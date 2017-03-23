@@ -8,3 +8,11 @@
 	npm install 
 	npm start
 ```
+
+- 第二课
+> http协议、fs、path模块及创建项目静态服务器
+```bash
+	git checkout lesson1 
+	npm install 
+	npm start
+```
