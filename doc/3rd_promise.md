@@ -1,6 +1,15 @@
 
 ## 第三课 用Promise重构异步流程
 
+## 第二课作业小结
+
+> 提交网址 http://jscode.me/t/html-css-js/848/26
+
+> 郭琪琛 ==> 已在项目中尝试用Promise处理[](https://github.com/GuoQichen/pure-node-notebook/blob/master/app/static-server/index.js)
+
+
+
+
 课件流程
 1. 增加对前端ajax的get请求服务
 2. 采用url/querystring模块，抽象Url解析模块
