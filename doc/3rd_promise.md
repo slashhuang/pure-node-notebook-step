@@ -12,7 +12,12 @@
 
 课件流程
 1. 增加对前端ajax的get请求服务
-2. 采用url/querystring模块，抽象Url解析模块
+
+
+
+//2. 采用url/querystring模块，抽象Url解析模块 [忽略]
+
+
 3. 由异步出现的问题引出异步处理神器 =>Promise
 4. Promise讲解
 5. 采用Promise串行static-server/ajax服务/url解析模块
@@ -61,7 +66,16 @@
 
 - Promise.prototype.then
 
+==> return 新的Promise
+
 - Promise.prototype.catch
+
+==> return 新的Promise
+
+
+
+
+
 
 - Promise.resolve
 
