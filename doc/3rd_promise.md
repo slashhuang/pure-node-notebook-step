@@ -1,35 +1,94 @@
 
 ## 第三课 用Promise重构异步流程
 
+## 第二课作业小结
 
-## Promise基本知识概述
+> 提交网址 http://jscode.me/t/html-css-js/848/26
+
+> 郭琪琛 ==> 已在项目中尝试用Promise处理[](https://github.com/GuoQichen/pure-node-notebook/blob/master/app/static-server/index.js)
+
+
+
+
+课件流程
+1. 增加对前端ajax的get请求服务
+
+
+
+//2. 采用url/querystring模块，抽象Url解析模块 [忽略]
+
+
+3. 由异步出现的问题引出异步处理神器 =>Promise
+4. Promise讲解
+5. 采用Promise串行static-server/ajax服务/url解析模块
+
+
+-----------------------node的url/querystring模块---------------
+
+> 处理客户端url
+
+[url模块](https://github.com/nodejs/node/blob/master/doc/api/url.md)
+
+- [url模块图解](./3rd-assets/url.png)
+
+
+> 处理客户端query参数
+
+[querystring模块](https://github.com/nodejs/node/blob/master/doc/api/querystring.md)
+
+```javascript
+	querystring.stringify({ foo: 'bar', baz: ['qux', 'quux'], corge: '' })
+	// returns 'foo=bar&baz=qux&baz=quux&corge='
+
+	querystring.parse('foo=bar&abc=xyz&abc=123')
+	// returns {
+	  foo: 'bar',
+	  abc: ['xyz', '123']
+	}
+```
+
+
+
+
+--------------------------Promise知识--------------
 
 - [Promise知识](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
+1. Promise的状态
 
-## 基本的Promise数据结构
+- pending
+- rejected
+- fulfilled
 
-> Promise的三个状态
-
-1. pending: initial state, not fulfilled or rejected.
-
-2. fulfilled: meaning that the operation completed successfully.
-
-3. rejected: meaning that the operation failed.
-
-
-## Promise方法
+2. prototype原型方法和静态方法
 
 > new Promise((res,rej)=>{})
 
-> Promise.prototype.then  => 返回一个Promise
+- Promise.prototype.then
 
-> Promise.prototype.catch  => 返回一个Promise
+==> return 新的Promise
 
-> Promise.resolve(value) => value可以是thenable;也可以是
+- Promise.prototype.catch
 
-> Promise.reject(reason)
+==> return 新的Promise
 
-> Promise.all(iterable)
 
-> Promise.race(iterable)
+
+- Promise.resolve
+
+- Promise.reject
+
+- Promise.all
+
+- Promise.race
+
+3. Promise的作用
+
+- 状态存储
+
+- 异步处理
+
+- 链式调用
+
+
+
