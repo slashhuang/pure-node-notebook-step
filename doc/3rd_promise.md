@@ -23,31 +23,6 @@
 5. 采用Promise串行static-server/ajax服务/url解析模块
 
 
------------------------node的url/querystring模块---------------
-
-> 处理客户端url
-
-[url模块](https://github.com/nodejs/node/blob/master/doc/api/url.md)
-
-- [url模块图解](./3rd-assets/url.png)
-
-
-> 处理客户端query参数
-
-[querystring模块](https://github.com/nodejs/node/blob/master/doc/api/querystring.md)
-
-```javascript
-	querystring.stringify({ foo: 'bar', baz: ['qux', 'quux'], corge: '' })
-	// returns 'foo=bar&baz=qux&baz=quux&corge='
-
-	querystring.parse('foo=bar&abc=xyz&abc=123')
-	// returns {
-	  foo: 'bar',
-	  abc: ['xyz', '123']
-	}
-```
-
-
 
 
 --------------------------Promise知识--------------
