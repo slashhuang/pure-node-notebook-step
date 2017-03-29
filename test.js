@@ -6,20 +6,20 @@
 // typeof Promise == 'fuction'
 
 // prototype ==> then/catch
+// 测试用例
+const assert = require('assert');
 
-// 静态方法 ==> all/race/resolve/reject
+const p = Promise.resolve(1); 
 
-// 第一步 new Promise
+const p1 = p.then(val=>{
+	console.log(val); //1
+	return val+1
+});// resolved 2
 
-var another = Promise.resolve({
-	then:function(resolve,reject){
-		reject(2)
-	}
+const p2 = p1.then(val=>{
+	console.log(val);
+	assert.equal(val,2)
 })
-// another.then(val=>console.log(val))
-another.catch(val=>console.log(val))
-
-console.log(another);
 
 
 

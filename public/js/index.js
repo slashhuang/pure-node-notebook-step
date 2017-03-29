@@ -16,9 +16,14 @@ setTimeout(function(){
 			console.log(error)
 		}
 	})
+	//模拟post
 	$.ajax({
 		url:'/list.action',
-		method:'get',
+		method:'post',
+		headers:{
+			'content-type':"application/json"
+		},
+		data:JSON.stringify(['zhongguo',"jrg"]),
 		//返回数组
 		success:function(arr){
 			var liStr = arr.map(function(ele){
