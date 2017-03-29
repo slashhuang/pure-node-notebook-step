@@ -35,9 +35,10 @@
 1、第三课Promise回顾【答疑】
 2、stream知识 => 处理post请求
 3、抽象url-parser
-4、Promise抽象中间件模型
-5、链式处理static-server、api-server、url-parser中间件。
-6、技术答疑
+
+
+
+4、Promise抽象中间件模型 + 链式处理static-server、api-server、url-parser中间件。
 
 
 
