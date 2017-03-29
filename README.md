@@ -19,7 +19,7 @@
 
 - 第三课 引入对接前端ajax的api服务体系
 
-> 引入Promise/url/querystring架构项目
+> 引入Promise/url架构项目
 
 > 引入对接前端ajax的api服务体系
 
@@ -28,3 +28,19 @@
 	npm install 
 	npm start
 ```
+
+- 第四课 引入stream处理post请求，引入Promise来连接static-server api-server
+
+> 引入Promise/url/querystring架构项目
+
+> 抽象request数据的context模型中间件url-parser
+
+```bash
+	git checkout lesson4
+	npm install 
+	npm start
+```
+
+
+
+
