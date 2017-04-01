@@ -6,23 +6,23 @@
 
  // request: query + body + method
 
-module.exports = (request)=>{
+module.exports = (ctx)=>{
 	//原型链readable stream eventEmitter
-	let { method,url,context } = request;
+	let { method,url } = ctx.req;
+	let { reqCtx } = ctx;
+
 	method = method.toLowerCase();
 	return Promise.resolve({
 		then:(resolve,reject)=>{
-			context.method = method;
-			//@TODO
-			context.query = {};
+
 			if(method == 'post'){
 				let data = '';
 		 		//paused flow 
 		 		//paused ===> flow
-		 		request.on('data',(chunk)=>{
+		 		ctx.req.on('data',(chunk)=>{
 			 		data += chunk;
 			 	}).on('end',()=>{
-			 		context.body = JSON.parse(data);
+			 		reqCtx.body = JSON.parse(data);
 			 		//通知下一个流程
 			 		resolve()
 			 	});

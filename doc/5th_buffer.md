@@ -12,14 +12,20 @@
 2. 认识如何通过stream的形式来获取客户端post的数据。
 
 3. 认识Promise在异步处理中的使用方式，至少会使用如下三种方式。
-```js
+
+
+```javascript
+	// contructor + prototype.then/catch 形式
     new Promise((resolve,reject)=>{
         resolve(1)
     }).then(val=>{}).catch(val=>{})
+  //Promise.resolve  参数为普通js数据类型
     Promise.resolve(1)
+  //参数为thenable
     Promise.resolve({then:(res,rej)=>{
         rej(1)
     }})
+
 ```
 
 
