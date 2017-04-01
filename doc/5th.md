@@ -26,9 +26,9 @@
 #### 第五课内容概要
 ------------------------------------------------
 
-1. 将request和response抽象为一个引用对象。
+1. 设计expres和koa的api风格,模拟`use` `callback`方法。
 
-2. 设计expres和koa的api风格,模拟`use` `callback`方法。
+2. 将request和response抽象为一个引用对象。
 
 3. Buffer讲解
 
@@ -56,6 +56,8 @@
     });
 
 ```
+
+[整理的buffer资料](https://github.com/slashhuang/full-stack-practice/blob/master/buffer/buffer.md)
 
 
 
