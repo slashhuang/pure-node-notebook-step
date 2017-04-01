@@ -7,6 +7,7 @@ const fs = require('fs');
 http.createServer((req,res)=>{
     // res.setHeader('Transfer-Encoding','chunked');
     res.writeHead(200,'ok');
+    //模拟chunk encoding
     let source = fs.createReadStream('./test/tmp',{
         highWaterMark:11
     });
@@ -28,7 +29,7 @@ const createClient = ()=>{
             console.log('chunk comes in')
             raw.push(chunk);
         }).on('end',()=>{
-            console.log(Buffer.concat(raw,raw.length));
+            console.log(Buffer.concat(raw,raw.length*11).toString('utf8'));
         })
         // console.log(res)
       // Do stuff with response
