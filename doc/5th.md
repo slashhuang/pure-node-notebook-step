@@ -15,13 +15,12 @@
 ```js
     new Promise((resolve,reject)=>{
         resolve(1)
-    });
+    }).then(val=>{}).catch(val=>{})
     Promise.resolve(1)
     Promise.resolve({then:(res,rej)=>{
         rej(1)
     }})
 ```
-
 
 
 #### 第五课内容概要
