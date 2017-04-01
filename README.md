@@ -41,6 +41,20 @@
 	npm start
 ```
 
+- 第五课 构建框架形式的代码风格
+
+1. 设计expres和koa的api风格,模拟`use` `callback`方法。
+
+2. 将request和response抽象为一个引用对象。
+
+3. Buffer讲解
+
+```bash
+	git checkout lesson5
+	npm install 
+	npm start
+```
+
 
 
 
