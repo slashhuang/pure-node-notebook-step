@@ -1,5 +1,7 @@
 
-require('../css/index.less')
+require('../css/index.less');
+const c = 'c';
+console.log(c)
 setTimeout(function(){
 	$.ajax({
 		url:'/user.action',

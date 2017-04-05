@@ -1,30 +1,35 @@
 webpackJsonp([0],[
 /* 0 */,
-/* 1 */
+/* 1 */,
+/* 2 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
+"use strict";
 /* WEBPACK VAR INJECTION */(function($) {
-__webpack_require__(1);
+
+__webpack_require__(2);
+var c = 'c';
+console.log(c);
 setTimeout(function () {
 	$.ajax({
 		url: '/user.action',
 		method: 'get',
 		//返回数组
-		success: function (arr) {
+		success: function success(arr) {
 			var liStr = arr.map(function (ele) {
 				return '<li>' + ele + '</li>';
 			}).join('');
 
 			$('#root').html(liStr);
 		},
-		error: function (error) {
-			console.log(error);
+		error: function error(_error) {
+			console.log(_error);
 		}
 	});
 	//模拟post
@@ -36,20 +41,20 @@ setTimeout(function () {
 		},
 		data: JSON.stringify(['zhongguo', "jrg"]),
 		//返回数组
-		success: function (arr) {
+		success: function success(arr) {
 			var liStr = arr.map(function (ele) {
 				return '<li>' + ele + '</li>';
 			}).join('');
 
 			$('#shop').html(liStr);
 		},
-		error: function (error) {
-			console.log(error);
+		error: function error(_error2) {
+			console.log(_error2);
 		}
 	});
 }, 1000);
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ })
-],[2]);
+],[3]);
 //# sourceMappingURL=index.js.map

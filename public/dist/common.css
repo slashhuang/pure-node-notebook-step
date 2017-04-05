@@ -231,7 +231,7 @@ div {
 }
 
 .clearfix:after {
-    content: "\0020";
+    content: " ";
     display: block;
     height: 0;
     clear: both;
@@ -334,3 +334,5 @@ button[disabled], .Btn[disabled] {
     color: #fff;
     border: 0;
 }
+
+/*# sourceMappingURL=common.css.map*/

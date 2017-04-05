@@ -18,7 +18,8 @@ module.exports =  {
         entry: {
             index:'./js/index.js',
             common: [
-                'jquery'
+                'jquery',
+                "reset"
             ]
         },
         // debug: true,
