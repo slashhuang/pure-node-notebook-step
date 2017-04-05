@@ -68,8 +68,13 @@ exports.loaders = [
                 })
             },
             {
-                test: /\.(png|jpg|gif|woff|woff2|ttf|eot|svg|swf)$/,
-                use: "file-loader?name=[name]_[sha512:hash:base64:7].[ext]"
+                test: /\.(png|jpg|jpeg|gif|woff|woff2|ttf|eot|svg|swf)$/,
+                use: {
+                    loader:'file-loader',
+                    options:{
+                        name:'[name]_[sha512:hash:base64:7].[ext]'
+                    }
+                }
             },
             {
                 test: /\.html/,
