@@ -1,5 +1,5 @@
 
-
+require('../css/index.less')
 setTimeout(function(){
 	$.ajax({
 		url:'/user.action',
@@ -9,7 +9,7 @@ setTimeout(function(){
 			var liStr = arr.map(function(ele){
 					return '<li>'+ele+'</li>'
 				}).join('');
-			
+
 			$('#root').html(liStr);
 		},
 		error:function(error){
@@ -29,7 +29,7 @@ setTimeout(function(){
 			var liStr = arr.map(function(ele){
 					return '<li>'+ele+'</li>'
 				}).join('');
-			
+
 			$('#shop').html(liStr);
 		},
 		error:function(error){

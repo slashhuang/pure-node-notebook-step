@@ -9,13 +9,16 @@ exports.plugins =[
             new webpack.ProvidePlugin({
                 $: 'jquery'
             }),
-            new webpack.optimize.DedupePlugin(),
             new WebpackNotifierPlugin({
                 title: 'Webpack 编译成功',
-                contentImage: path.resolve(process.cwd(), './img/logo.jpg'),
+                contentImage: path.resolve(process.cwd(), './img/avatar.jpeg'),
                 alwaysNotify: true
             }),
-            new ExtractTextPlugin("[name].css"),
+            new ExtractTextPlugin({
+                filename: "[name].css",
+                disable: false,
+                allChunks: true
+            }),
             new webpack.optimize.CommonsChunkPlugin({
                 name: 'common',
                 minChunks: Infinity
@@ -26,37 +29,38 @@ exports.loaders = [
             {
                 test: /\.js[x]?$/,
                 exclude: /node_modules/,
-                loader: 'babel-loader'
+                use: 'babel-loader'
             },
             {
                 test: /\.css$/,
-                loader: ExtractTextPlugin.extract('style-loader','css-loader')
-            },
-            {
-                test: /\.rcss$/,
-                loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules&sourceMap&-convertValues!sass-loader?sourceMap')
-            },
-            {
-                test: /\.less$/,
-                loader: ExtractTextPlugin.extract('style-loader', 'css-loader?-convertValues!less-loader')
-            },
-            {
-                test: /\.scss$/,
-                loader: ExtractTextPlugin.extract('style-loader', 'css-loader?sourceMap&-convertValues!sass-loader?sourceMap')
-            },
-            {
-                test: /\.(png|jpg|gif|woff|woff2|ttf|eot|svg|swf)$/,
-                loader: "file-loader?name=[name]_[sha512:hash:base64:7].[ext]"
-            },
-            {
-                test: /\.html/,
-                loader: "html-loader?" + JSON.stringify({
-                    minimize: false,
-                    attrs:false
+                use: ExtractTextPlugin.extract({
+                    fallback: "style-loader",
+                    use:'css-loader'
                 })
             },
             {
-                 test: /\.json$/,
-                 loader: "json"
+                test: /\.less$/,
+                use: ExtractTextPlugin.extract({
+                    fallback:'style-loader',
+                    use:['css-loader','less-loader']
+                })
+            },
+            {
+                test: /\.scss$/,
+                use: ExtractTextPlugin.extract({
+                    fallback:'style-loader',
+                    use:['css-loader','sass-loader']
+                })
+            },
+            {
+                test: /\.(png|jpg|gif|woff|woff2|ttf|eot|svg|swf)$/,
+                use: "file-loader?name=[name]_[sha512:hash:base64:7].[ext]"
+            },
+            {
+                test: /\.html/,
+                use: "html-loader?" + JSON.stringify({
+                    minimize: false,
+                    attrs:false
+                })
             }
 ];

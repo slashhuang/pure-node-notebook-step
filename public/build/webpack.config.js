@@ -21,7 +21,7 @@ module.exports =  {
                 'jquery'
             ]
         },
-        debug: true,
+        // debug: true,
         devtool: 'source-map',
         output: {
             path: path.resolve(process.cwd(),'dist/'),
@@ -34,6 +34,6 @@ module.exports =  {
         },
         plugins,
         module: {
-            loaders
+            rules:loaders
         }
 };

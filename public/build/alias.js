@@ -4,6 +4,5 @@
  */
 
 module.exports = {
-    jquery: 'js/lib/jquery.js',
     reset:'css/reset.css'
 };
