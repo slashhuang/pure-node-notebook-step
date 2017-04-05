@@ -1,0 +1,340 @@
+html, body {
+    color: #212121;
+    background: #f2f2f2;
+    height: 100%;
+}
+
+#iwjw {
+    background: #f2f2f2
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, lengend, button, input, textarea, form, th, td {
+    margin: 0;
+    padding: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+
+body, button, input, select, textarea {
+    font: 14px/1.5 "helvetica", "arial","Pingfang",'PingFang SC', "Hiragino Sans GB", "Microsoft Yahei", "STHeiti", "sans-serif";
+}
+
+/*
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    height: 60px;
+    line-height: 60px;
+    clear: both;
+    position: relative
+}
+
+h4 {
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px
+}*/
+
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+
+code, kbd, pre, samp, tt {
+    font-family: "Courier New", Courier, monospace;
+}
+
+small {
+    font-size: 12px;
+}
+
+ul, ol,li {
+    list-style: none;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+    display: inline-block; /* 1 */
+    vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #212121;
+    outline: 0 none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus, input:focus {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: none;
+}
+
+input:hover {
+    /*border-width: 1px;*/
+}
+
+abbr[title], acronym[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+legend {
+    color: #000;
+}
+
+fieldset, img {
+    border: none;
+}
+
+button, input, select, textarea, label {
+    font-size: 100%;
+    vertical-align: middle;
+    outline: 0;
+}
+
+textarea {
+    resize: none !important;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+table th {
+    text-align: left;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    *color: #fff;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+    border: 0;
+    outline: none;
+}
+div {
+    outline: none;
+}
+
+.t-l {
+    text-align: left;
+}
+
+.t-r {
+    text-align: right;
+}
+
+.t-c {
+    text-align: center;
+}
+
+.f-l {
+    float: left;
+}
+
+.f-r {
+    float: right;
+}
+
+.p-a {
+    position: absolute;
+}
+
+.p-r {
+    position: relative;
+}
+
+.i-b {
+    display: inline-block;
+}
+
+.c-b {
+    clear: both;
+}
+
+.v-middle {
+    vertical-align: middle;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.bf,
+.bold {
+    font-weight: bold;
+}
+
+.color-gray {
+    color: #bdbdbd;
+}
+
+input[type] {
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+input[type="button"],
+input[type="submit"] {
+    border: 0 none;
+}
+
+::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #bdbdbd;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #bdbdbd;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #bdbdbd;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #bdbdbd;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+.input-focus {
+    transition: border-color .3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+.input-focus {
+    /*border-color: #686e71 !important;*/
+}
+
+button, .Btn {
+    border: 0;
+    /*background-color: #e84a01;*/
+  /*  width: 120px;
+    height: 32px;
+    line-height: 32px;*/
+    /*color: #fff;*/
+    /*border-radius: 2px;*/
+    cursor: pointer;
+    text-align: center;
+    display: inline-block
+}
+
+button:active, .Btn:active {
+    /*background-color: #cb4000;*/
+}
+
+button:hover, .Btn:hover {
+    background-color: #f16d2f;
+    text-decoration: none
+}
+
+button[disabled], .Btn[disabled] {
+    background-color: #d3d5d9;
+    cursor: default;
+    color: #fff;
+    border: 0;
+}
