@@ -73,9 +73,12 @@ exports.loaders = [
             },
             {
                 test: /\.html/,
-                use: "html-loader?" + JSON.stringify({
-                    minimize: false,
-                    attrs:false
-                })
+                use:{
+                    loader:"html-loader",
+                    options:{
+                        minimize: false,
+                        attrs:false
+                    }
+                }
             }
 ];
