@@ -35,21 +35,36 @@ exports.loaders = [
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({
                     fallback: "style-loader",
-                    use:'css-loader'
+                    use:{
+                        loader:'css-loader',
+                        options: {
+                           sourceMap: true
+                        }
+                    }
                 })
             },
             {
                 test: /\.less$/,
                 use: ExtractTextPlugin.extract({
                     fallback:'style-loader',
-                    use:['css-loader','less-loader']
+                    use:['css-loader',{
+                        loader:'less-loader',
+                        options: {
+                           sourceMap: true
+                        }
+                    }]
                 })
             },
             {
                 test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
                     fallback:'style-loader',
-                    use:['css-loader','sass-loader']
+                    use:['css-loader',{
+                        loader:'sass-loader',
+                        options: {
+                           sourceMap: true
+                        }
+                    }]
                 })
             },
             {
