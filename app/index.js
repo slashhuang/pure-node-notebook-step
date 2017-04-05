@@ -17,6 +17,7 @@ class App {
 	composeMiddleware(context){
 		let { middlewareArr }= this
 		//根据中间件数组 创建Promise链条
+		// iterator 
 		for(let middleware of middlewareArr){
 			this.middlewareChain = this.middlewareChain.then(()=>{
 				return middleware(context)
@@ -66,3 +67,6 @@ class App {
 }
 
 module.exports =  App
+
+
+

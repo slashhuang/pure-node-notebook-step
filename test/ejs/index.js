@@ -1,10 +1,41 @@
 const path =require('path');
-let test = ()=>{
-    const ejs = require('ejs');
-    const input = `<%- $.hello %>
-    <%- include('test') %>
-    <!--hellowrold-->
-    <%- $.script %>`
+const ejs = require('ejs');
+
+//VUE
+const html = `hello
+    <% if(world.match('jjj')){ %>
+    <%- world %>
+    <% }%> 
+    <%- include('./test') %>  
+    <%= hhh %>`;
+
+//==> (locals)=>'hello'+locals.world
+
+//将字符串转换成function
+const f1 = ejs.compile(html,{
+  filename:path.resolve(__filename),
+  compileDebug:true,
+});
+const finalStr = f1({
+  world:'xxxx',
+  hhh:'<script>alert(1)</script>'
+});
+
+/* 
+ * <% %> 逻辑运算
+ * <%- %> unescape
+ * <%= %> escape  XSS
+ */
+
+console.log('----',finalStr)
+
+
+// let test = ()=>{
+//     const ejs = require('ejs');
+//     const input = `<%- $.hello %>
+//     <%- include('test') %>
+//     <!--hellowrold-->
+//     <%- $.script %>`
 
     /* <%= %>的作用
      过滤敏感字符 比如<、>
@@ -19,21 +50,21 @@ let test = ()=>{
      /* <%- %>的作用
       不过滤敏感字符
      */
-    let func = ejs.compile(input, {
-        compileDebug:true,
-        _with:false,
-        filename:path.resolve(__filename), //所有include的路径相对这个路径
-        localsName:'$'
-    });
+    // let func = ejs.compile(input, {
+    //     compileDebug:true,
+    //     _with:false,
+    //     filename:path.resolve(__filename), //所有include的路径相对这个路径
+    //     localsName:'$'
+    // });
 
-    let output = func({
-        hello:'world',
-        script:'<script>console.log(1)</script>'
-    });
-    console.log(output);
-}
+    // let output = func({
+    //     hello:'world',
+    //     script:'<script>console.log(1)</script>'
+    // });
+    // console.log(output);
+// }
 
-setInterval(test,10000)
+// setInterval(test,10000)
 
 //解析
 
