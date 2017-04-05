@@ -29,6 +29,7 @@
     "nodemon": "^1.11.0"
   },
   "dependencies": {
-    "axios": "^0.15.3"
+    "axios": "^0.15.3",
+    "ejs": "^2.5.6"
   }
 }
