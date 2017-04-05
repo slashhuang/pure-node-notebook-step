@@ -55,6 +55,18 @@
 	npm start
 ```
 
+- 第六课 
+
+1. 引入EJS中间件处理服务端渲染
+
+2. 引入webpack2构建前端代码
+
+```bash
+	git checkout lesson6
+	npm install 
+	npm start
+```
+
 
 
 
