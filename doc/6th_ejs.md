@@ -22,6 +22,8 @@
 [ejs模板引擎文档](https://github.com/mde/ejs)
 [webpack2文档](https://webpack.js.org/concepts/)
 
+[ejs基本架构参考full-stack-practice](https://github.com/slashhuang/full-stack-practice/blob/master/view-engine/ejs.md)
+
 
 第六课的代码的改造效果
 
