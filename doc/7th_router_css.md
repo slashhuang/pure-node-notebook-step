@@ -45,7 +45,9 @@
 
 ## 技术选型
 
-1. code高亮: [highlight.js](https://github.com/isagalaev/highlight.js)
+1. markdown转换html: [marked](https://github.com/chjj/marked)
+
+2. code高亮: [highlight.js](https://github.com/isagalaev/highlight.js)
 
 
 
