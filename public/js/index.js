@@ -1,7 +1,8 @@
 
-require('../css/index.less');
+require('../css/index.scss');
 const c = 'c';
-console.log(c)
+require('highlight.js').initHighlightingOnLoad()
+
 setTimeout(function(){
 	$.ajax({
 		url:'/user.action',

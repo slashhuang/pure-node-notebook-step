@@ -39,11 +39,13 @@
 
 2. markdown学习及响应式框架初步
 
+[wiki关于markdown的说明](https://zh.wikipedia.org/zh-hans/Markdown)
 
+[markdown中文语法说明](http://wowubuntu.com/markdown/)
 
+## 技术选型
 
-
-
+1. code高亮: [highlight.js](https://github.com/isagalaev/highlight.js)
 
 
 
