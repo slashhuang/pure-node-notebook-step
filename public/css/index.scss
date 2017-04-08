@@ -2,11 +2,75 @@
 
 @import './highlight/dark.scss';
 body{
-	background: #fff;
-    // background:url('../img/avatar.jpeg')
+	min-height:800px;
+	background:linear-gradient( 45deg, gray, coral );
+	font-size:16px;
+}
+.clear-fix{
+	&:after{
+		content:'';
+		clear:both;
+		display:block;
+	}
 }
 
-.nav{
-	display: inline-block;
-
+.header{
+	padding:20px 30px;
+	border-bottom:1px solid #fff;
+	.avatar{
+		float:left;
+		width:100px;
+		height:100px;
+	}
+	.nav{
+		float:left;
+		font-size:20px;
+		li{
+			display:inline-block;
+			padding:20px;
+			a{
+				transition:ease .2s;
+				&:hover{
+					color:yellow
+				}
+			}
+		}
+	}
 }
+.content{
+	// min-height:800spx;
+}
+.footer{
+	padding:20px 30px;
+	border-bottom:1px solid #fff;
+	background:linear-gradient( 45deg, black, gray );
+	.img{
+		float:left;
+		width:100px;
+		height:100px;
+	}
+	.links{
+		float:left;
+		font-size:20px;
+		li{
+			display:inline-block;
+			padding:20px;
+
+			a{
+				transition:ease .2s;
+				&:hover{
+					color:yellow
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

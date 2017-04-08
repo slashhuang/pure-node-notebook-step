@@ -5,13 +5,19 @@
 
 > 提交网址 http://jscode.me/t/json-promise-api-server-static-server/982
 
-
 ------------------------------------------------------
 
+
+http ==> on('data',()) response.end()
+fs  fs.writeFile fs.readFile
+console.log() ==> process.stdout
+
+request.on('data',()=>{})
+request.on('end',()=>)
 第四节课上课流程安排：
 
 1、第三课Promise回顾【答疑】
-2、stream知识 => 处理post请求
+2、stream知识 => 处理post请求 
 3、抽象url-parser
 
 

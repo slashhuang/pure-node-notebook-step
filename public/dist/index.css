@@ -70,9 +70,50 @@
   font-weight: bold; }
 
 body {
-  background: #fff; }
+  min-height: 800px;
+  background: linear-gradient(45deg, gray, coral);
+  font-size: 16px; }
 
-.nav {
-  display: inline-block; }
+.clear-fix:after {
+  content: '';
+  clear: both;
+  display: block; }
+
+.header {
+  padding: 20px 30px;
+  border-bottom: 1px solid #fff; }
+  .header .avatar {
+    float: left;
+    width: 100px;
+    height: 100px; }
+  .header .nav {
+    float: left;
+    font-size: 20px; }
+    .header .nav li {
+      display: inline-block;
+      padding: 20px; }
+      .header .nav li a {
+        transition: ease .2s; }
+        .header .nav li a:hover {
+          color: yellow; }
+
+.footer {
+  padding: 20px 30px;
+  border-bottom: 1px solid #fff;
+  background: linear-gradient(45deg, black, gray); }
+  .footer .img {
+    float: left;
+    width: 100px;
+    height: 100px; }
+  .footer .links {
+    float: left;
+    font-size: 20px; }
+    .footer .links li {
+      display: inline-block;
+      padding: 20px; }
+      .footer .links li a {
+        transition: ease .2s; }
+        .footer .links li a:hover {
+          color: yellow; }
 
 /*# sourceMappingURL=index.css.map*/

@@ -1,6 +1,5 @@
 ## 第六课   引入EJS模板引擎
 
-
 #### 第五课作业小结
 
 > 提交网址 http://jscode.me/t/buffer-promise/1005/3

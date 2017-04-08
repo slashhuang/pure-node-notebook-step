@@ -40,6 +40,8 @@ class App {
 				},
 				res:response,
 				resCtx:{
+					statusMessage:'resolve ok',
+					statusCode:200, //状态码
 					headers:{},//response的返回报文
 					body:'',//返回给前端的内容区
 				}
@@ -56,9 +58,9 @@ class App {
  				.then(()=>{
 					//数组
 					//setHeader(key,value)
-					let { body,headers } = context.resCtx; 
+					let { body,headers,statusCode,statusMessage } = context.resCtx; 
 					let base ={'X-powered-by':'Node.js'};
-					response.writeHead(200,'resolve ok',Object.assign(base,headers));
+					response.writeHead(statusCode,statusMessage,Object.assign(base,headers));
 					response.end(body)	
 				})
 

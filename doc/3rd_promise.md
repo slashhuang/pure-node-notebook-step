@@ -8,6 +8,8 @@
 > 郭琪琛 ==> 已在项目中尝试用Promise处理[](https://github.com/GuoQichen/pure-node-notebook/blob/master/app/static-server/index.js)
 
 
+async await  ===> Promise
+
 
 
 课件流程

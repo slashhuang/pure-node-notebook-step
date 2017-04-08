@@ -13,26 +13,25 @@
     <link rel="stylesheet" href="/dist/index.css">
 </head>
 <body>
-<%- hello %>
+<div class='header clear-fix'>
+	<div class='avatar'>
+		<img src='/img/avatar.jpeg' />
+	</div>
+	<ul class='nav'>
+		<li>
+			<a href='/'>首页</a>
+		</li>
+		<li>
+			<a href='/about'>关于</a>
+		</li>
+		<li>
+			<a href='/list'>博客列表</a>
+		</li>
+		<li>
+			<a href='/write'>写博客</a>
+		</li>
+	</ul>
+</div>
 
 
 
-<pre>
-    <code>
-        module.exports = require('./lib/marked');
-    </code>
-</pre>
-    <div>
-        <img src='/img/avatar.jpeg' />
-        <div class='nav'>
-            <a href='/about'>关于作者</a>
-            <a href='/'>主页</a>
-            <a href='/list'>博客列表</a>
-        </div>
-        <div id='root'>root</div>
-         <div id='shop'>shop</div>
-    </div>
-    <script src="/dist/common.js"></script>
-    <script src="/dist/index.js"></script>
-</body>
-</html>

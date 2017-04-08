@@ -75,7 +75,7 @@
     });
     let out = []
     data.on('data',(chunk)=>{
-        out.push(chunk)
+        out.push(chunk) 
     }).on('end',()=>{
         let l = out.length;
         console.log(Buffer.concat(out,l).toString())

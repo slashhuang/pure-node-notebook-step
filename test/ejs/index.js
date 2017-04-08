@@ -24,7 +24,7 @@ const finalStr = f1({
 /* 
  * <% %> 逻辑运算
  * <%- %> unescape
- * <%= %> escape  XSS
+ * <%= %> escape  XSS  
  */
 
 console.log('----',finalStr)
