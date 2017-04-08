@@ -67,6 +67,35 @@
 	npm start
 ```
 
+- 第七课 
+
+1. 实现Node动态路由/重定向/页面模块划分
+
+2. 页面框架
+
+- header:   头像 + 导航：首页 + 关于 + 博客列表 + 写博客(权限控制) +  搜索
+- footer:   友情链接 + github + 知乎 + 掘金 + copyright + 回到顶部
+- 内容区 :见如下内容排布
+
+3. 内容排布
+
+|-- /: 首页   博客列表 + 个人展示
+|
+|-- /list: 博客列表  博客分类  + 博客列表
+|
+|-- /write: 写博客    分两屏  markdown编辑器 +  预览区
+|
+|-- /about/ 关于      自由发挥
+|
+|-- url非法: 重定向到首页
+
+
+```bash
+	git checkout lesson7
+	npm install 
+	npm start
+```
+
 
 
 
