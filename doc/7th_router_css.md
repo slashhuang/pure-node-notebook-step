@@ -49,6 +49,7 @@
 
 2. code高亮: [highlight.js](https://github.com/isagalaev/highlight.js)
 
+3. markdownParser :[css-trick社区推荐](https://css-tricks.com/choosing-right-markdown-parser/)
 
 
 
