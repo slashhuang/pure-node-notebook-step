@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>媒体查询</title>
+    <style type="text/css">
+        body{
+            text-align: center;
+        }
+        @media screen and (min-width:600px){
+            body{
+                background:red;
+            }
+            li{
+                display: inline-block
+            }
+        }
+        @media screen and (max-width: 600px){
+            body{
+                background: yellow
+            }
+            li{
+                display: block
+            }
+        }
+        .header{
+            border-bottom:1px solid #fff;
+            position: relative;
+        }
+        .avatar{
+            position: absolute;
+            left:0;
+            top:0;
+            border-radius:100px;
+            background: coral;
+            width:100px;
+            height:100px;
+        }
+        .nav{
+            padding:30px;
+            margin-left:100px;
+            font-size:20px;
+        }
+    }
+}
+    </style>
+</head>
+<body>
+<div class='header clear-fix'>
+    <div class='avatar'></div>
+    <ul class='nav'>
+        <li>
+            <a href='/'>首页</a>
+        </li>
+        <li>
+            <a href='/about'>关于</a>
+        </li>
+        <li>
+            <a href='/list'>博客列表</a>
+        </li>
+        <li>
+            <a href='/write'>写博客</a>
+        </li>
+    </ul>
+</div>
+ hello world
+
+</body>
+</html>
