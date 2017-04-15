@@ -77,20 +77,57 @@ body {
   clear: both;
   display: block; }
 
+.footer {
+  background: linear-gradient(45deg, gray, coral);
+  padding: 5px 30px; }
+  .footer .nav {
+    margin-left: 180px; }
+  .footer .personal {
+    left: 130px;
+    position: absolute;
+    width: 50px;
+    height: 130px; }
+    @media screen and (min-width: 800px) {
+      .footer .personal {
+        width: 300px; }
+        .footer .personal .motto {
+          padding-left: 30px;
+          top: 20px; } }
+    @media screen and (min-width: 700px) and (max-width: 800px) {
+      .footer .personal {
+        width: 200px; }
+        .footer .personal .motto {
+          padding-left: 20px;
+          top: 15px; } }
+    @media screen and (min-width: 480px) and (max-width: 700px) {
+      .footer .personal {
+        width: 140px; }
+        .footer .personal .motto {
+          padding-left: 10px;
+          top: 5px; } }
+    .footer .personal .motto {
+      width: 100%;
+      position: absolute;
+      bottom: 1px; }
+
+.header {
+  border-bottom: 1px solid #fff;
+  background: #efd5b8; }
+  .header .nav {
+    margin-left: 130px; }
+
 .header, .footer {
   position: relative;
   padding: 20px 30px; }
-  .header.footer, .footer.footer {
-    background: linear-gradient(45deg, gray, coral);
-    padding: 0 30px; }
-  .header.header, .footer.header {
-    border-bottom: 1px solid #fff;
-    background: #efd5b8; }
   .header .avatar, .footer .avatar {
     position: absolute;
     border-radius: 100%; }
+    .header .avatar .motto, .footer .avatar .motto {
+      position: absolute;
+      bottom: -20px;
+      left: 0; }
     @media screen and (min-width: 480px) {
-      .header .avatar, .footer .avatar {
+      .header .avatar, .header .avatar img, .footer .avatar, .footer .avatar img {
         left: 30px;
         top: 20px;
         width: 100px;
@@ -102,7 +139,6 @@ body {
         width: 60px;
         height: 60px; } }
   .header .nav, .footer .nav {
-    margin-left: 130px;
     text-align: right; }
     @media screen and (min-width: 800px) {
       .header .nav, .footer .nav {
