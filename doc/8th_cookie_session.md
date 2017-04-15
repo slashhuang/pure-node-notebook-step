@@ -11,7 +11,7 @@
 
 2. 理解页面header+body+footer的分块实现 
 
-3. 了解markdown的背景知识
+3. 了解markdown的背景知识 
 
 
 ### 第八课内容概要
@@ -29,9 +29,9 @@
 
 1. cookie + session的实现
 
-2. 处理表单提交之form-url-encoded
+2. url模块
 
-3. 媒体查询之 meadia query
+3. 媒体查询之 medea query
 
 ### 参考资料
 [Node官方URL对象说明](https://github.com/nodejs/node/blob/master/doc/api/url.md)

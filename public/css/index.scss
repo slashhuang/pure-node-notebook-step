@@ -1,5 +1,3 @@
-
-
 @import './highlight/dark.scss';
 body{
 	font-size:16px;
@@ -11,9 +9,12 @@ body{
 		display:block;
 	}
 }
-$s-screen:480px;
-$m-screen:700px;
-$b-screen:800px;
+$s-screen:480px; //适配移动端
+$m-screen:700px; //适配ipad
+$b-screen:800px; //适配PC
+// @media screen and (min-width:100px) and (max-width:800px){
+// 	float ==> block + inline-block + flex
+// }
 .footer{
 	background:linear-gradient( 45deg, gray, coral );
 	padding:5px 30px;
@@ -117,17 +118,21 @@ $b-screen:800px;
 	.nav{
 		text-align:right;
 		$h:60px;
+		// pc
 		@media screen and (min-width:$b-screen){
 			@include navScreen(20px,$b-screen)
         }
+        //ipad =pc
         @media screen and (min-width:$m-screen)  and (max-width: $b-screen){
 			@include navScreen(10px,$m-screen)
         }
+        //ipad
         @media screen and (min-width:$s-screen)  and (max-width: $m-screen){
         	width:410px;
         	text-align:center;
 			@include navScreen(10px,$s-screen)
         }
+        //mobile
         @media screen and (max-width: $s-screen){
         	font-size:14px;
             li{

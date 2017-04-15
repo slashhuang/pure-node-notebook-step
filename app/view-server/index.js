@@ -33,8 +33,10 @@ module.exports = (ctx)=>{
 						filename:layoutPath
 					});
 
-					let html = render({templateName:ejsName})
-
+					let html = render({
+						templateName:ejsName,
+						hasUser:resCtx.hasUser
+					})
 
 					resCtx.headers = Object.assign(resCtx.headers,{
 						'Content-Type':'text/html'

@@ -25,9 +25,11 @@
 		<li>
 			<a href='/list'>博客列表</a>
 		</li>
+		<%if(hasUser){%>
 		<li>
 			<a href='/write'>写博客</a>
 		</li>
+		<% }%>
 		<li>
 			<form class="search" 
 				 action="//google.com/search" method="get" accept-charset="utf-8">

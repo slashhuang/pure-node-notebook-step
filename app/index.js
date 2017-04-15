@@ -40,6 +40,8 @@ class App {
 				},
 				res:response,
 				resCtx:{
+					//标示用户
+					hasUser:false,
 					statusMessage:'resolve ok',
 					statusCode:200, //状态码
 					headers:{},//response的返回报文
@@ -60,6 +62,7 @@ class App {
 					//setHeader(key,value)
 					let { body,headers,statusCode,statusMessage } = context.resCtx; 
 					let base ={'X-powered-by':'Node.js'};
+					// response.setHeader('Set-Cookie','hello=wolrd')
 					response.writeHead(statusCode,statusMessage,Object.assign(base,headers));
 					response.end(body)	
 				})

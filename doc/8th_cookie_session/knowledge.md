@@ -1,6 +1,5 @@
 ## cookie 和 session知识图谱
 
-
 ## 生成cookie
 
 服务端header头格式
@@ -14,7 +13,7 @@
 1. Session cookies【会话层cookie】
 
 ```bash
-	Set-Cookie: <cookie-name>=<cookie-value>
+	Set-Cookie: <cookie-name>=<cookie-value>;directive
 ```
 
 如果不添加任何的指令(directive)的话，cookie的有效期仅仅在浏览器(或者页面)未关闭生效。

@@ -11,8 +11,9 @@ module.exports  =(request,response)=>{
 		`userId=slashhuang`,
 		MaxAge,
 		httpOnly,
+		// http ==> https
 		//在非https或者SSL协议下，导致cookie不再生效
-		secure
+		// secure
 	].join(';')
 	response.setHeader('Set-Cookie',sessionCookie);
 	return request.headers
