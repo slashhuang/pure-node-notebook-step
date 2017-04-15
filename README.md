@@ -96,6 +96,18 @@
 	npm start
 ```
 
+- 第八课 
+
+1. 学习cookie来实现简化版的登录登出
+
+2. 介绍responsive css基础
+
+```bash
+	git checkout lesson8
+	npm install 
+	npm start
+```
+
 
 
 
