@@ -2,8 +2,6 @@
 
 @import './highlight/dark.scss';
 body{
-	min-height:800px;
-	background:linear-gradient( 45deg, gray, coral );
 	font-size:16px;
 }
 .clear-fix{
@@ -14,20 +12,79 @@ body{
 	}
 }
 
-.header{
+.header,.footer{
+	position:relative;
 	padding:20px 30px;
-	border-bottom:1px solid #fff;
+	background:linear-gradient( 45deg, gray, coral );
+	&.footer{
+		padding:0 30px;
+	}
+	&.header{
+		border-bottom:1px solid #fff;
+	}
+	$height:100px;
+	$h:60px;
+	$sh:40px;
 	.avatar{
-		float:left;
-		width:100px;
-		height:100px;
+		 position: absolute;
+		 border-radius:100%;
+		 @media screen and (min-width:600px){
+            &{
+            	left:30px;
+         		top:20px;
+         		width:$height;
+		        height:$height;
+            }
+        }
+        @media screen and (max-width: 600px){
+            &{
+                left:30px;
+				top:30px;
+				width:$h;
+		        height:$h;
+            }
+		}
 	}
 	.nav{
-		float:left;
-		font-size:20px;
-		li{
-			display:inline-block;
-			padding:20px;
+        margin-left:130px;
+		text-align:right;
+		$h:60px;
+		@media screen and (min-width:600px){
+			font-size:18px;
+			line-height:$height;
+            li{
+            	line-height:$height;
+                display: inline-block;
+                margin:0 20px;
+                &.links{
+					line-height:$h;
+					img{
+						vertical-align: middle;
+						width:($h - 10);
+						height:($h - 10);
+						border-radius:100%;
+					}
+				}
+            }
+        }
+        @media screen and (max-width: 600px){
+        	font-size:14px;
+            li{
+            	margin:0 10px;
+                display: block;
+				text-align:left;
+				&.links{
+					line-height:$h;
+					img{
+						vertical-align: middle;
+						width:$sh;
+						height:$sh;
+						border-radius:100%;
+					}
+				}
+            }
+		}
+		li{		
 			a{
 				transition:ease .2s;
 				&:hover{
@@ -36,36 +93,13 @@ body{
 			}
 		}
 	}
-}
-.content{
-	// min-height:800spx;
 }
 .footer{
-	padding:20px 30px;
-	border-bottom:1px solid #fff;
-	background:linear-gradient( 45deg, black, gray );
-	.img{
-		float:left;
-		width:100px;
-		height:100px;
-	}
-	.links{
-		float:left;
-		font-size:20px;
-		li{
-			display:inline-block;
-			padding:20px;
-
-			a{
-				transition:ease .2s;
-				&:hover{
-					color:yellow
-				}
-			}
-		}
-	}
+	min-height:140px;
 }
-
+.content{
+	min-height:70%;
+}
 
 
 
