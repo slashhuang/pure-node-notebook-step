@@ -134,6 +134,8 @@ body {
               border-radius: 100%; } }
     @media screen and (min-width: 480px) and (max-width: 700px) {
       .header .nav, .footer .nav {
+        width: 410px;
+        text-align: center;
         font-size: 18px;
         line-height: 40px; }
         .header .nav li, .footer .nav li {

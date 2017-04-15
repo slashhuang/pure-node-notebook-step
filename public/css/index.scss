@@ -76,6 +76,8 @@ body{
 			@include navScreen(10px,$m-screen)
         }
         @media screen and (min-width:$s-screen)  and (max-width: $m-screen){
+        	width:410px;
+        	text-align:center;
 			@include navScreen(10px,$s-screen)
         }
         @media screen and (max-width: $s-screen){
