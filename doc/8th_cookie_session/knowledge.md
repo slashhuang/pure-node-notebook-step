@@ -23,6 +23,8 @@
 
 采用`Expires`或者`Max-Age`来控制cookie有效时间。
 
+`Expires`使用`HTTP-date timestamp`来标示，一般是UTC或者GMT时间格式。
+
 ```bash
 	Set-Cookie: id=a3fWa; Expires=Wed, 21 Oct 2015 07:28:00 GMT;
 ```
@@ -79,10 +81,12 @@
 
 2. 敏感动作设置较短cookie过期时间(仅针对cookie)，当然这块有很多种其他做法
 
+### 延伸阅读
+[cookie指令简化版](./cookie_headers.md)
 
+[set-cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie)
 
-
-
+[w3.org的http协议参数规范](https://www.w3.org/Protocols/rfc2616/rfc2616-sec3.html)
 
 
 
