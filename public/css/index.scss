@@ -11,24 +11,27 @@ body{
 		display:block;
 	}
 }
-
 .header,.footer{
 	position:relative;
 	padding:20px 30px;
-	background:linear-gradient( 45deg, gray, coral );
 	&.footer{
+		background:linear-gradient( 45deg, gray, coral );
 		padding:0 30px;
 	}
 	&.header{
 		border-bottom:1px solid #fff;
+		background:#efd5b8
 	}
 	$height:100px;
 	$h:60px;
 	$sh:40px;
+	$s-screen:480px;
+	$m-screen:700px;
+	$b-screen:800px;
 	.avatar{
 		 position: absolute;
 		 border-radius:100%;
-		 @media screen and (min-width:600px){
+		 @media screen and (min-width:$s-screen){
             &{
             	left:30px;
          		top:20px;
@@ -36,7 +39,7 @@ body{
 		        height:$height;
             }
         }
-        @media screen and (max-width: 600px){
+        @media screen and (max-width: $s-screen){
             &{
                 left:30px;
 				top:30px;
@@ -45,17 +48,12 @@ body{
             }
 		}
 	}
-	.nav{
-        margin-left:130px;
-		text-align:right;
-		$h:60px;
-		@media screen and (min-width:600px){
+	@mixin navScreen($margin,$m){
 			font-size:18px;
-			line-height:$height;
+            line-height:if($margin==20px or $m==$m-screen, $height, $sh);
             li{
-            	line-height:$height;
                 display: inline-block;
-                margin:0 20px;
+                margin:0 $margin;
                 &.links{
 					line-height:$h;
 					img{
@@ -66,8 +64,21 @@ body{
 					}
 				}
             }
+	}
+	.nav{
+        margin-left:130px;
+		text-align:right;
+		$h:60px;
+		@media screen and (min-width:$b-screen){
+			@include navScreen(20px,$b-screen)
         }
-        @media screen and (max-width: 600px){
+        @media screen and (min-width:$m-screen)  and (max-width: $b-screen){
+			@include navScreen(10px,$m-screen)
+        }
+        @media screen and (min-width:$s-screen)  and (max-width: $m-screen){
+			@include navScreen(10px,$s-screen)
+        }
+        @media screen and (max-width: $s-screen){
         	font-size:14px;
             li{
             	margin:0 10px;
@@ -90,7 +101,22 @@ body{
 				&:hover{
 					color:yellow
 				}
+				img{
+					margin-right:1px;
+				}
 			}
+		}
+	}
+}
+$blue:#0f88eb;
+.search{
+	#search{
+		transition:ease .5s;
+		border-radius:2px;
+		font-size:14px;
+		padding:2px 4px;
+		&:focus{
+			border: 1px solid $blue;
 		}
 	}
 }
