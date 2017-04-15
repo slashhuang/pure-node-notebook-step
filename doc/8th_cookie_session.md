@@ -19,9 +19,11 @@
 
 #### 设计功能范围
 
-1. 设计博客登录注册系统
+1. 设计URL形式的博客登录注册系统
 
-2. 设计响应式前端CSS框架
+2. 增加url-parser中间件处理query的功能
+
+3. 设计响应式前端CSS框架
 
 ### 技术知识点
 
@@ -32,10 +34,13 @@
 3. 媒体查询之 meadia query
 
 ### 参考资料
+[Node官方URL对象说明](https://github.com/nodejs/node/blob/master/doc/api/url.md)
 
 [MDN cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
 
 [MDN media query](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+
+
 
 
 
