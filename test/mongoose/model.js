@@ -1,11 +1,12 @@
 /*
  * 学习mongoose model
- * http://mongoosejs.com/docs/guide.html
+ * http://mongoosejs.com/docs/models.html
  */
 
  const mongoose = require('mongoose')
  const moment = require('moment')
  const blogSchema = require('./schema')['blogSchema']
+ require('./_index')
  /*
   * Creating a model
   * 将schema塞入model
@@ -27,9 +28,16 @@
  blog.save((err,blog)=>{
  	console.log(err)
  })
- /*
-  * 实例方法
-  */
+ /*实例方法*/
   blog.$findAll((err,list)=>{
     console.log('findall',list)
   })
+  /*静态方法*/
+  Blog.findByName('gulp学习指南',(err,list)=>{
+    console.log('findByName',list)
+  })
+   /*加上query*/
+ Blog.find().byName('fu').exec(function(err, list) {
+  console.log(list);
+});
+

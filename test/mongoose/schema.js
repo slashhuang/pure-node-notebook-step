@@ -25,6 +25,14 @@
  blogSchema.methods.$findAll = function(cb) {
   return this.model('Blog').find(cb);
 };
+// Static methods
+blogSchema.statics.findByName = function(title, cb) {
+  return this.find({ title:title  }, cb);
+};
+//Query Helpers ==>for mongoose queries
+blogSchema.query.byName = function(name) {
+  return this.find({ name: new RegExp(name, 'i') });
+};
 module.exports = {
 	blogSchema
 }
