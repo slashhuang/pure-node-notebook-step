@@ -31,7 +31,8 @@ module.exports =  {
             publicPath: ''
         },
         resolve: {
-            alias: AddResolve(require('./alias'))
+            alias: AddResolve(require('./alias')),
+            extensions: ['.js', '.vue']
         },
         plugins,
         module: {

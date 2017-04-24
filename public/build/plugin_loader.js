@@ -32,6 +32,10 @@ exports.loaders = [
                 use: 'babel-loader'
             },
             {
+                test: /\.vue$/,
+                loader: 'vue-loader'
+            },
+            {
                 test: /\.css$/,
                 use: ExtractTextPlugin.extract({
                     fallback: "style-loader",
