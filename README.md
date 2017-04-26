@@ -56,6 +56,10 @@ Node项目和前端项目通过`git submodule`进行管理。
 
 ```
 
+**小贴士**
+
+如果submodule安装不成功，请换用http协议
+`修改.gitmodules文件为http协议`，如果还有疑问请联系作者slashhuang
 
 
 ## 第一课 项目初始化http服务
