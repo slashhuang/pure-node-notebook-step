@@ -58,7 +58,7 @@ Node项目和前端项目通过`git submodule`进行管理。
 
 
 
-## 第一课 项目初始化
+## 第一课 项目初始化http服务
 
 npm、package.json、node_modules及项目架构初始化
 
@@ -69,7 +69,7 @@ npm、package.json、node_modules及项目架构初始化
 	npm start
 ```
 
-## 第二课 静态服务器
+## 第二课 创建静态资源服务器
 
 http协议、fs、path模块及创建项目静态服务器
 
@@ -91,11 +91,13 @@ http协议、fs、path模块及创建项目静态服务器
 	npm start
 ```
 
-## 第四课 引入stream处理post请求，引入Promise来连接static-server api-server
+## 第四课 引入stream和Promise
 
- 引入Promise/url/querystring架构项目
+引入Promise来连接static-server api-server
 
- 抽象request数据的context模型中间件url-parser
+引入Promise/url/querystring架构项目
+
+抽象request数据的context模型中间件url-parser
 
 ```bash
 	git checkout lesson4
@@ -103,7 +105,7 @@ http协议、fs、path模块及创建项目静态服务器
 	npm start
 ```
 
-## 第五课 构建框架形式的代码风格
+## 第五课 设计框架API及Promise中间件逻辑
 
 1. 设计expres和koa的api风格,模拟`use` `callback`方法。
 
@@ -117,7 +119,7 @@ http协议、fs、path模块及创建项目静态服务器
 	npm start
 ```
 
-## 第六课
+## 第六课 引入EJS模板引擎
 
 1. 引入EJS中间件处理服务端渲染
 
@@ -129,7 +131,7 @@ http协议、fs、path模块及创建项目静态服务器
 	npm start
 ```
 
-## 第七课
+## 第七课  实现Node动态路由/重定向/页面模块划分
 
 1. 实现Node动态路由/重定向/页面模块划分
 
@@ -158,7 +160,7 @@ http协议、fs、path模块及创建项目静态服务器
 	npm start
 ```
 
-## 第八课
+## 第八课 采用cookie实现用户授信
 
 1. 学习cookie来实现简化版的登录登出
 
@@ -171,7 +173,7 @@ http协议、fs、path模块及创建项目静态服务器
 ```
 
 
-## 第九课 学习mongodb
+## 第九课 引入mongodb准备数据库存储
 
 1. [参考mongo-panda项目](https://github.com/slashhuang/mongo-panda)
 
