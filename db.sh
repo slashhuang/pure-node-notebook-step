@@ -1,3 +1,4 @@
 # !/bin/sh
 
-mongod --dbpath /Users/huangxiaogang/data/db
+
+mongod --dbpath ~/data/db
