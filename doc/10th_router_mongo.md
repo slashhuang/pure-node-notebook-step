@@ -3,9 +3,9 @@
 
 ### 内容概要
 
-1. 嵌入路由API模块
+1. 完善url-parser对query参数的处理
 
-2. 完善url-parser对query参数的处理
+2. 嵌入路由API模块
 
 3. 增加mongoose数据存储
 
