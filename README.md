@@ -1,47 +1,51 @@
 # pure-node-notebook-step
 
-- 第一课 项目初始化
-> npm、package.json、node_modules及项目架构初始化
+## 第一课 项目初始化
+
+npm、package.json、node_modules及项目架构初始化
+
 ```bash
 	git clone git@github.com:slashhuang/pure-node-notebook-step.git
-	git checkout lesson1 
-	npm install 
+	git checkout lesson1
+	npm install
 	npm start
 ```
 
-- 第二课 静态服务器
-> http协议、fs、path模块及创建项目静态服务器
-```bash
-	git checkout lesson2 
-	npm install 
-	npm start
-```
+## 第二课 静态服务器
 
-- 第三课 引入对接前端ajax的api服务体系
-
-> 引入Promise/url架构项目
-
-> 引入对接前端ajax的api服务体系
+http协议、fs、path模块及创建项目静态服务器
 
 ```bash
-	git checkout lesson3 
-	npm install 
+	git checkout lesson2
+	npm install
 	npm start
 ```
 
-- 第四课 引入stream处理post请求，引入Promise来连接static-server api-server
+## 第三课 引入对接前端ajax的api服务体系
 
-> 引入Promise/url/querystring架构项目
+引入Promise/url架构项目
 
-> 抽象request数据的context模型中间件url-parser
+引入对接前端ajax的api服务体系
+
+```bash
+	git checkout lesson3
+	npm install
+	npm start
+```
+
+## 第四课 引入stream处理post请求，引入Promise来连接static-server api-server
+
+ 引入Promise/url/querystring架构项目
+
+ 抽象request数据的context模型中间件url-parser
 
 ```bash
 	git checkout lesson4
-	npm install 
+	npm install
 	npm start
 ```
 
-- 第五课 构建框架形式的代码风格
+## 第五课 构建框架形式的代码风格
 
 1. 设计expres和koa的api风格,模拟`use` `callback`方法。
 
@@ -51,11 +55,11 @@
 
 ```bash
 	git checkout lesson5
-	npm install 
+	npm install
 	npm start
 ```
 
-- 第六课 
+## 第六课
 
 1. 引入EJS中间件处理服务端渲染
 
@@ -63,11 +67,11 @@
 
 ```bash
 	git checkout lesson6
-	npm install 
+	npm install
 	npm start
 ```
 
-- 第七课 
+## 第七课
 
 1. 实现Node动态路由/重定向/页面模块划分
 
@@ -92,11 +96,11 @@
 
 ```bash
 	git checkout lesson7
-	npm install 
+	npm install
 	npm start
 ```
 
-- 第八课 
+## 第八课
 
 1. 学习cookie来实现简化版的登录登出
 
@@ -104,7 +108,18 @@
 
 ```bash
 	git checkout lesson8
-	npm install 
+	npm install
+	npm start
+```
+
+
+## 第九课 学习mongodb
+
+1. [参考mongo-panda项目](https://github.com/slashhuang/mongo-panda)
+
+```bash
+	git checkout lesson9
+	npm install
 	npm start
 ```
 
