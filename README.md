@@ -15,8 +15,19 @@ Node项目和前端项目通过`git submodule`进行管理。
 ```bash
 
 	|- app  node中间件及服务
+	|	|
+	|	|- 技术选型   promise + ejs(模板引擎)
+	|
+	|
 	|- public  前端submodule
+	|	|
+	|	|- 技术选型   ant-design + react项目
+	|
+	|
 	|- db.sh   运行mongodb
+	|	|
+	|	|- 技术选型   mongoose
+	|
 	|- index.js  程序启动入口
 
 ```
@@ -35,11 +46,11 @@ Node项目和前端项目通过`git submodule`进行管理。
 	npm install --verbose
 	npm start
 
-	# install submodule
+	# init submodule
 	git submodule init
-	cd public
 
 	#  start front-end code
+	cd public
 	npm install --verbose
 	npm start
 
