@@ -6,7 +6,9 @@
 
 <%- include('./module/header')  %>
 <div class='main-module'>
-    <%- include(templateName)%>
+   <div id="mod-<%- viewName %>"></div>
 </div>
+<script src="/dist/common.js"></script>
+<script src="/dist/<%- viewName %>.js"></script>
 
 <%- include('./module/footer')  %>

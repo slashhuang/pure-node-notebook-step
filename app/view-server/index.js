@@ -2,11 +2,7 @@
  * view-server
  * @Author slashhuang
  */
-
-// 映射表
-
 // ejs动态渲染
-
 const ejs = require('ejs');
 const fs = require('fs');
 const path = require('path');
@@ -14,16 +10,15 @@ const mime = require('mime');
 const urlrewriteMap = require('./urlrewrite');
 //路由 routes  ==>  controller ==> 结果 MVC
 module.exports = (ctx)=>{
-	let { req,resCtx } = ctx;
-	let { url } = req;
+	let { reqCtx,resCtx } = ctx;
+	let { pathname } = reqCtx;
 	return Promise.resolve({
 		then:(resolve,reject)=>{
-
-			if(url.match('action') || url.match(/\./)){
+			if(pathname.match('action') || pathname.match(/\./)){
 				resolve()
 			}else{
 				const viewPath = path.resolve(__dirname,'ejs'); 
-				let ejsName = urlrewriteMap[url];
+				let ejsName = urlrewriteMap[pathname];
 				if(ejsName){
 					let layoutPath=path.resolve(viewPath,'layout.ejs');					
 					let layoutHtml = fs.readFileSync(layoutPath,'utf8');
@@ -34,7 +29,7 @@ module.exports = (ctx)=>{
 					});
 
 					let html = render({
-						templateName:ejsName,
+						viewName:ejsName,
 						hasUser:resCtx.hasUser
 					})
 

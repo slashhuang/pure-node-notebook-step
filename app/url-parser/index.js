@@ -6,18 +6,24 @@
 
  // request: query + body + method
 
+const Url = require('url')
+
 module.exports = (ctx)=>{
 	//原型链readable stream eventEmitter
 	let { method,url } = ctx.req;
 	let { reqCtx } = ctx;
-
+	/* reqCtx
+	query 对象
+	pathname路径名
+	index.html?a=1 ==> query:{a:1}
+	*/
 	method = method.toLowerCase();
+	Object.assign(reqCtx,Url.parse(url,true),{method})
+
 	return Promise.resolve({
 		then:(resolve,reject)=>{
-
 			if(method == 'post'){
 				let data = [];
-
 		 		//paused flow 
 		 		//paused ===> flow
 		 		ctx.req.on('data',(chunk)=>{
