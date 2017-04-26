@@ -1,3 +1,3 @@
 # !/bin/sh
 
-mongod --dbpath=/Users/slashhuang/data/db
+mongod --dbpath /Users/huangxiaogang/data/db

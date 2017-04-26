@@ -11,6 +11,7 @@
     <title>slashhuang的技术博客</title>
     <link rel="stylesheet" href="/dist/common.css">
     <link rel="stylesheet" href="/dist/index.css">
+    <!-- <link rel="stylesheet" href="/dist/<%- viewName%>.css"> -->
 </head>
 <body>
 <div class='header clear-fix'>
@@ -31,10 +32,10 @@
 		</li>
 		<% }%>
 		<li>
-			<form class="search" 
+			<form class="search"
 				 action="//google.com/search" method="get" accept-charset="utf-8">
 				<label>搜索</label>
-					<input type="search" id="search" name="q" 
+					<input type="search" id="search" name="q"
 							autocomplete="off" maxlength="20" placeholder="搜索">
 					<input type="hidden" name="q" value="site:slashhuang.github.io">
 			</form>
