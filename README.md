@@ -191,6 +191,22 @@ http协议、fs、path模块及创建项目静态服务器
 	npm start
 ```
 
+## 第十课 引入mongoose和submodule
+
+1. 引入submodule管理前端静态资源
+
+2. 编写router处理前端ajax请求
+
+3. 编写数据库存储逻辑
+
+博客的前端项目在[pure-node-notebook-fe](https://github.com/slashhuang/pure-node-notebook-fe)
+
+```bash
+	git checkout lesson10
+	npm install
+	npm start
+```
+
 
 
 
