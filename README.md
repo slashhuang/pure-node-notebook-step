@@ -1,5 +1,36 @@
 # pure-node-notebook-step
 
+## 前言
+
+本项目是从零到一打造个人博客系统的项目，不依赖任何第三方框架，手写Node.js处理中间件。
+前端项目在[pure-node-notebook-fe](https://github.com/slashhuang/pure-node-notebook-fe)
+Node项目和前端项目通过`git submodule`进行管理。
+
+**运行项目**
+
+```bash
+
+	git clone git@github.com:slashhuang/pure-node-notebook-step.git
+
+	# start mongodb
+	sh ./db.sh
+
+	# start node.js code
+	npm install --verbose
+	npm start
+
+	# install submodule
+	git submodule init
+	cd public
+
+	#  start front-end code
+	npm install --verbose
+	npm start
+
+```
+
+
+
 ## 第一课 项目初始化
 
 npm、package.json、node_modules及项目架构初始化
