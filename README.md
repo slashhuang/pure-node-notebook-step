@@ -3,8 +3,24 @@
 ## 前言
 
 本项目是从零到一打造个人博客系统的项目，不依赖任何第三方框架，手写Node.js处理中间件。
-前端项目在[pure-node-notebook-fe](https://github.com/slashhuang/pure-node-notebook-fe)
+
+博客的前端项目在[pure-node-notebook-fe](https://github.com/slashhuang/pure-node-notebook-fe)
+
 Node项目和前端项目通过`git submodule`进行管理。
+
+您可以通过`git checkout 分支`来学习不同阶段的node代码。
+
+**项目架构**
+
+```bash
+
+	|- app  node中间件及服务
+	|- public  前端submodule
+	|- db.sh   运行mongodb
+	|- index.js  程序启动入口
+
+```
+
 
 **运行项目**
 
