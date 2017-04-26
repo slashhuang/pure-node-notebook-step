@@ -175,13 +175,32 @@ http协议、fs、path模块及创建项目静态服务器
 
 ## 第九课 引入mongodb准备数据库存储
 
-1. [参考mongo-panda项目](https://github.com/slashhuang/mongo-panda)
+1. 学习关系型和非关系型数据库
+
+2. 学习mongodb基本知识
+
+[参考mongo-panda项目](https://github.com/slashhuang/mongo-panda)
 
 ```bash
 	git checkout lesson9
 	npm install
 	npm start
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
