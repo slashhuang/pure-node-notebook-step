@@ -7,7 +7,6 @@
 对应的mongoose方法: save( insert+ update) + findOneAndUpdate + remove
 
 [增删改查文档](http://mongoosejs.com/docs/models.html)
-	
 ### 博客列表及详情
 
 1. '/blogDetail.action' =get=> 获取博客详情
