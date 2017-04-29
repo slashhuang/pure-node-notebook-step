@@ -15,3 +15,26 @@
 5. '/categoryList.action'=get=> 获取博客分类
 
 6. '/category.action' =post=> 增加或者更新博客分类
+
+
+### JSON versus BSON
+1. BSON
+BSON =  Bin­ary JSON 
+主要特性:
+	bin­ary-en­coded seri­al­iz­a­tion of JSON-like doc­u­ments
+更多数据类型:
+	比如 Date 、 Binary data	,采用C系数据类型
+特点:
+	轻量 高效数据交换
+
+2. (JavaScript Object Notation) 
+
+轻量级的数据交换格式,理想的数据交换语言。
+
+
+
+
+
+
+[JSON](http://www.json.org/)
+[BSON](http://bsonspec.org/)
