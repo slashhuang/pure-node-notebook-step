@@ -1,7 +1,6 @@
 # 增加管理后台界面
 
 
-
 ### CRUD ==> create + replace + update + delete
 
 对应的mongoose方法: save( insert+ update) + findOneAndUpdate + remove
@@ -32,7 +31,7 @@ BSON =  Bin­ary JSON
 更多数据类型:
 	比如 Date 、 Binary data	,采用C系数据类型
 特点:
-	轻量 高效数据交换
+	轻量 高效数据交换 IO
 
 2. (JavaScript Object Notation) 
 
@@ -47,13 +46,27 @@ BSON =  Bin­ary JSON
 ### ObjectId
 
 >  12-byte ObjectId 
-
+key不会存在重复
 -   4-byte value representing the seconds since the Unix epoch,
 -   3-byte machine identifier,
 -   2-byte process id, and
 -   3-byte counter, starting with a random value.
 
 [ObjectId](https://docs.mongodb.com/manual/reference/method/ObjectId/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

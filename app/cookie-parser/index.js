@@ -8,7 +8,7 @@ module.exports = (ctx)=>{
 	let { pathname } = ctx.reqCtx;
 	let { cookie } = ctx.req.headers;
 	let { resCtx,res } = ctx;
-	let cookieObj = cookie_parser.parse(cookie);
+	let cookieObj = cookie_parser.parse(cookie||'');
 	return Promise.resolve({
 		then:(resolve,reject)=>{
 			let cookieStr =time=>`authd=hello;Max-Age=${time}`;

@@ -13,6 +13,7 @@ module.exports=(ctx)=>{
  		//let it pass
  		return Promise.resolve()
  	}
+ 	// request ==> handler 
 	return router.routes(ctx).then(val=>{
 		if(val){
 			resCtx.statusCode=200

@@ -9,7 +9,7 @@
 // |
 // |-- /list: 博客列表  博客分类  + 博客列表
 // |
-// |-- /write: 写博客    分两屏  markdown编辑器 +  预览区
+// |-- /manage: 管理博客    分两屏  markdown编辑器 +  预览区
 // |
 // |-- /about/ 关于      自由发挥
 // |
@@ -17,7 +17,8 @@
 const urlrewriteMap = {
 	'/':'index',
 	'/list':"list",
-	'/write':'write',
-	'/about':'about'
+	'/manage':'manage',
+	'/about':'about',
+	'/blog':'detail'
 };
 module.exports=urlrewriteMap
