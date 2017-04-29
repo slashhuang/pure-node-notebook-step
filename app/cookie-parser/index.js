@@ -3,7 +3,7 @@
  */
 const cookie_parser = require('cookie');
 //设置白名单
-const whiteNameList=['/name_slashhuang'];
+const whiteNameList=['/slashhuang'];
 module.exports = (ctx)=>{
 	let { pathname } = ctx.reqCtx;
 	let { cookie } = ctx.req.headers;
@@ -18,7 +18,7 @@ module.exports = (ctx)=>{
 				res.setHeader('Set-Cookie',cookieStr(3600))
 			}
 			//设置白名单
-			const whiteNameList=['/name_slashhuang'];
+			const whiteNameList=['/slashhuang'];
 			//登录
 			if(whiteNameList.indexOf(pathname)>-1){
 				res.setHeader('Set-Cookie',cookieStr(3600))
