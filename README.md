@@ -207,6 +207,40 @@ http协议、fs、path模块及创建项目静态服务器
 	npm start
 ```
 
+## 第十一课 采用mongoose来处理管理后台博客CRUD功能
+
+1. 增加博客主功能
+
+```bash
+	
+	# 博客列表及详情
+	
+	1. '/blogDetail.action' =get=> 获取博客详情
+
+	2. '/blogList.action' =get=> 获取博客列表
+
+	3. '/blog.action' =post=>  增加或者更新博客
+
+	4. '/deleteBlog.action' =get=> 删除博客
+
+	# 博客分类相关
+
+	5. '/categoryList.action'=get=> 获取博客分类
+
+	6. '/category.action' =post=> 增加或者更新博客分类
+```
+
+2. 编写数据库存储逻辑
+ 
+
+博客的前端项目在[pure-node-notebook-fe](https://github.com/slashhuang/pure-node-notebook-fe)
+
+```bash
+	git checkout lesson11
+	npm install
+	npm start
+```
+
 
 
 
