@@ -210,6 +210,8 @@ http协议、fs、path模块及创建项目静态服务器
 
 
 
+## 参考资料
+[mongo shell](https://docs.mongodb.com/manual/reference/mongo-shell/)
 
 
 
