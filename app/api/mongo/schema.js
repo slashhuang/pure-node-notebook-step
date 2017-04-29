@@ -1,23 +1,32 @@
 /*
- * 创建schema
- * @Author slashhuang
- * 17/4/26
+ *  mongodb schema for blog
+ *  @Author slashhuang
+ * 17/4/25
  */
 
-const {Schema} = require('mongoose');
+//The Mongoose [Schema](#schema_Schema) constructor
+const {Schema} = require('mongoose')
 
-//创建博客的数据存储 schema
-exports.blogSchema = new Schema({
-  title:  String,
-  content:   String, //html
-  rawContent:String, //markdown
-  category:String,//分类
-  date: { type: String, default: ()=>{
-  	return new Date().toLocaleString()
-  }}	
+
+const categorySchema = new Schema({
+    name: String,
+    id:String
 });
 
-//创建博客分类
-exports.categorySchema = new Schema({
-  category:  String,
+const blogSchema = new Schema({
+    title: String,
+    content:String,
+    rawContent:String,
+    //http://mongoosejs.com/docs/schematypes.html
+    category:categorySchema,
+    date: String
+},{
+    _id:false,
+    //http://mongoosejs.com/docs/guide.html#strict
+    strict: false
 });
+
+module.exports = {
+    blogSchema,
+    categorySchema
+}
