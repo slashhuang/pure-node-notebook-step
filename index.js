@@ -1,5 +1,5 @@
 
-/* 
+/*
  * created by slashhuang
  * 17/3/18
  */
@@ -13,8 +13,8 @@ const staticServer = require('./app/staic-server');
 const apiServer = require('./app/api');
 const urlParser = require('./app/url-parser');
 const viewServer = require('./app/view-server');
-server.use(cookieParser);
 server.use(urlParser);
+server.use(cookieParser);
 server.use(apiServer);
 server.use(staticServer);
 server.use(viewServer);

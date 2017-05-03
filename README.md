@@ -47,7 +47,8 @@ Node项目和前端项目通过`git submodule`进行管理。
 	npm start
 
 	# init submodule
-	git submodule init
+	git submodule init  或者 git submodule foreach git pull origin master
+
 
 	#  start front-end code
 	cd public
@@ -212,9 +213,9 @@ http协议、fs、path模块及创建项目静态服务器
 1. 增加博客主功能
 
 ```bash
-	
+
 	# 博客列表及详情
-	
+
 	1. '/blogDetail.action' =get=> 获取博客详情
 
 	2. '/blogList.action' =get=> 获取博客列表
@@ -231,7 +232,7 @@ http协议、fs、path模块及创建项目静态服务器
 ```
 
 2. 编写数据库存储逻辑
- 
+
 
 博客的前端项目在[pure-node-notebook-fe](https://github.com/slashhuang/pure-node-notebook-fe)
 
