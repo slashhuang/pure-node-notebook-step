@@ -1,5 +1,21 @@
 # 管理后台react架构
 
+
+## 知识点
+
+-  技术选型 JS: react + ant-design ; CSS:SCSS ; AJAX : axios
+
+-  ant-design : https://ant.design/docs/react/introduce
+
+-  react :  https://facebook.github.io/react/
+
+-  SCSS :  https://github.com/slashhuang/blog/tree/master/essays/css/scss
+
+-  axios :  https://github.com/mzabriskie/axios
+
+
+
+
 **项目架构**
 
 ```bash
@@ -27,3 +43,6 @@
     |   |- manage 管理后台
 
 ```
+
+
+[react配套教学项目地址](https://github.com/slashhuang/web-bolilerplate-for-beginners)
