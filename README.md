@@ -4,9 +4,8 @@
 
 本项目是从零到一打造个人博客系统的项目，不依赖任何第三方框架，手写Node.js处理中间件。
 
-博客的前端项目在[pure-node-notebook-fe](https://github.com/slashhuang/pure-node-notebook-fe)
+博客的前端项目可以参考独立的[pure-node-notebook-fe](https://github.com/slashhuang/pure-node-notebook-fe)
 
-Node项目和前端项目通过`git submodule`进行管理。
 
 您可以通过`git checkout 分支`来学习不同阶段的node代码。
 
@@ -19,7 +18,7 @@ Node项目和前端项目通过`git submodule`进行管理。
 	|	|- 技术选型   promise + ejs(模板引擎)
 	|
 	|
-	|- public  前端submodule
+	|- public  前端
 	|	|
 	|	|- 技术选型   ant-design + react项目
 	|
@@ -46,22 +45,16 @@ Node项目和前端项目通过`git submodule`进行管理。
 	npm install --verbose
 	npm start
 
-	# init submodule
-	git submodule init  或者 git submodule foreach git pull origin master
-
+	# 初始化前端项目
+	git clone https://github.com/slashhuang/pure-node-notebook-fe.git public
 
 	#  start front-end code
+
 	cd public
-	npm install --verbose
-	npm start
+	
+	npm run build
 
 ```
-
-**小贴士**
-
-如果submodule安装不成功，请换用http协议
-`修改.gitmodules文件为http协议`，如果还有疑问请联系作者slashhuang
-
 
 ## 第一课 项目初始化http服务
 
