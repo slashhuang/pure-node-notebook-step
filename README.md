@@ -236,8 +236,13 @@ http协议、fs、path模块及创建项目静态服务器
 	npm start
 ```
 
+## 第十二课  ssh部署阿里云ECS服务器
 
-
+```bash
+	git checkout lesson12
+	npm install
+	npm start
+```
 
 ## 参考资料
 [mongo shell](https://docs.mongodb.com/manual/reference/mongo-shell/)
