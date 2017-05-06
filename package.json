@@ -8,7 +8,9 @@
   },
   "scripts": {
     "start": "nodemon --inspect index.js",
-    "test": "nodemon --inspect   test/index.js"
+    "test": "nodemon --inspect   test/index.js",
+    "fe": "NODE_ENV=prod webpack --config ./public/build/webpack.config.js"
+
   },
   "repository": {
     "type": "git",
