@@ -1,23 +1,34 @@
 # 部署node.js应用和Node课复习
 
 1. ------------------------npm知识overview------------------------------------
+
 2. - [http协议概述](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
+
 3. --------------------------Promise知识--------------
+
 4. ----  引入stream处理post和put请求 + 采用Promise构建流式中间件
+
 5. ----  Buffer和构建Promise 中间件
+
 6. ----  引入EJS中间件处理服务端渲染
+
 7. ----  设计博客功能及路由
+
 8. ----  cookie + session的实现
+
 9. ----  学习mongodb
+
 10. ----- 增加mongoose数据存储
+
 11. ----- 增加管理后台界面
+
 12. ----- 管理后台react架构
 
-### 知识点
+### 部署Node应用知识点
 
-1. ssh
-2. pm2
-3. 操作系统
+1. [ssh](https://en.wikipedia.org/wiki/Secure_Shell)
+2. [pm2](https://github.com/Unitech/pm2)
+3. 操作系统ubuntu
 
 ### 基本流程
 
