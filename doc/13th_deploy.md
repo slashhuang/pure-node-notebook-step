@@ -128,6 +128,20 @@ model(schema)
 
 ```
 
+预告
+
+generator async/await co  promise等等的异步处理风格
+
+rxjs处理等等
+
+
+
+
+
+
+
+
+
 
 
 
