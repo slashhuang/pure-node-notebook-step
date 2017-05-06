@@ -12,6 +12,7 @@ exports.$_saveBlog = blog=>{
     // upsert  ==> update + insert 
     let condition = {title:blog.title}
     blog.date = new Date().toLocaleString()
+    //upsert
     return BlogModel.findOneAndUpdate(condition,blog,{
             new:true,
             upsert:true
