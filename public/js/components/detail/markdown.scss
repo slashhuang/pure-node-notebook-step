@@ -1,0 +1,74 @@
+$e6:#e6e6e6;
+$m-screen:648px; //适配ipad
+
+$base:14px;
+.markdown{
+    $blue: #108ee9;
+    $brow: #efd5b8;
+    $l-gray:#808080;
+    $d-green:#002b36;
+    $s-light-gray:#839496;
+    font-size:$base;
+    * {
+       word-wrap:break-word;
+       word-break:break-all;
+    }
+    //设置h1到h6
+    @for $i from 1 through 6 {
+      h#{$i} {
+        font-size:$base+12-$i*3;
+        margin-top:$base + 2 - $i*2;
+      }
+    }
+    p{
+        font-size:$base+2px;
+        line-height: 1.7em;
+    }
+    pre{
+         code{
+            width: 100%;
+            display: block;
+            color: $s-light-gray;
+        }
+    }
+    code{
+        display: inline-block;
+        background:  $d-green;
+        color:  $blue;
+        padding: 0.1em 0.5em;
+    }
+
+    blockquote{
+        border-left: 0.4em solid $brow;
+        margin: .8em 0 .8em 1%;
+        padding-left: 1%;
+        line-height: 1.5;
+        color: $l-gray;
+    }
+    a{
+        color:$blue;
+        background: transparent;
+        text-decoration: none;
+        outline: none;
+        cursor: pointer;
+        -webkit-transition: color .3s ease;
+        transition: color .3s ease;
+    }
+    ol{
+        display: block;
+        list-style-type: decimal;
+        padding-left:1em;
+        li{
+            list-style: decimal;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+

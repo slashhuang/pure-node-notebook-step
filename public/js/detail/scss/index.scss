@@ -1,0 +1,38 @@
+$s-screen:480px; //适配移动端
+$m-screen:700px; //适配ipad
+$b-screen:800px; //适配PC
+.blog-detail,.widgets{
+    float:left;
+    background:#fff;
+}
+.blog-detail{
+    padding:1.5em 4%;
+}
+
+@media screen and (min-width:$b-screen){
+    $l:70%;
+    .blog-detail{
+          width:$l
+    }
+    .widgets{
+        width: 100-$l
+    }
+}
+@media screen and (min-width:$m-screen)  and (max-width: $b-screen){
+    $l:60%;
+    .blog-detail{
+          width:$l
+    }
+    .widgets{
+        width: 100-$l
+    }
+}
+@media screen and (max-width: $m-screen){
+    $l:100%;
+    .blog-detail{
+          width:$l
+    }
+    .widgets{
+        width: 100-$l
+    }
+}

@@ -1,0 +1,18 @@
+@import '../../detail/scss/index.scss';
+
+.spinner{
+    text-align: center;
+    width: 100%;
+    padding-top:40px;
+    font-size:16px;
+    .ant-spin-dot{
+         margin:auto
+    }
+}
+
+.container{
+    .blog-detail{
+       margin:20px auto;
+       padding:1.5em 4%;
+    }
+}

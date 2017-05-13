@@ -1,0 +1,107 @@
+.markdown {
+  font-size: 14px; }
+  .markdown * {
+    word-wrap: break-word;
+    word-break: break-all; }
+  .markdown h1 {
+    font-size: 23px;
+    margin-top: 14px; }
+  .markdown h2 {
+    font-size: 20px;
+    margin-top: 12px; }
+  .markdown h3 {
+    font-size: 17px;
+    margin-top: 10px; }
+  .markdown h4 {
+    font-size: 14px;
+    margin-top: 8px; }
+  .markdown h5 {
+    font-size: 11px;
+    margin-top: 6px; }
+  .markdown h6 {
+    font-size: 8px;
+    margin-top: 4px; }
+  .markdown p {
+    font-size: 16px;
+    line-height: 1.7em; }
+  .markdown pre code {
+    width: 100%;
+    display: block;
+    color: #839496; }
+  .markdown code {
+    display: inline-block;
+    background: #002b36;
+    color: #108ee9;
+    padding: 0.1em 0.5em; }
+  .markdown blockquote {
+    border-left: 0.4em solid #efd5b8;
+    margin: .8em 0 .8em 1%;
+    padding-left: 1%;
+    line-height: 1.5;
+    color: #808080; }
+  .markdown a {
+    color: #108ee9;
+    background: transparent;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease; }
+  .markdown ol {
+    display: block;
+    list-style-type: decimal;
+    padding-left: 1em; }
+    .markdown ol li {
+      list-style: decimal; }
+
+.blog-detail, .widgets {
+  float: left;
+  background: #fff; }
+
+.blog-detail {
+  padding: 1.5em 4%; }
+
+@media screen and (min-width: 800px) {
+  .blog-detail {
+    width: 70%; }
+  .widgets {
+    width: 30%; } }
+
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  .blog-detail {
+    width: 60%; }
+  .widgets {
+    width: 40%; } }
+
+@media screen and (max-width: 700px) {
+  .blog-detail {
+    width: 100%; }
+  .widgets {
+    width: 0%; } }
+
+.blog-content {
+  padding: 1em 0;
+  border-bottom: 1px solid #ddd; }
+
+.blog-head {
+  border-bottom: 1px solid #ddd; }
+
+.blog-author {
+  text-align: right; }
+  .blog-author .date {
+    font-size: 0.8em; }
+  .blog-author .author {
+    font-size: 0.8em;
+    margin-left: 0.4em; }
+
+.blog-title {
+  position: relative; }
+  .blog-title .edit {
+    position: absolute;
+    right: 1em;
+    bottom: 0;
+    font-size: 0.6em;
+    color: gray;
+    text-decoration: underline; }
+
+/*# sourceMappingURL=about.css.map*/
